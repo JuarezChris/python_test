@@ -3,7 +3,7 @@ from flask_app import app
 from flask import render_template, redirect, request, session, flash
 from flask_app.models.burger import Burger
 
-
+print("HIIII")
 @app.route('/burgers')
 def burgers():
 	return render_template('results.html',burgers=Burger.get_all())
